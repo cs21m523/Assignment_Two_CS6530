@@ -66,4 +66,6 @@ This implies that the lifetime of key k is about 2<sup>32</sup> messages, after 
 ##### The text is based on a theorem attributed to Ernesto Cesaro (see [KNUT98] for a proof), which states the following: Given two randomly chosen integers, x and y, the probability that gcd(x, y) = 1 is 6/&pi;<sup>2</sup>. Use this theorem in a program to determine statistically the value of &pi; The main program should call three subprograms: the random number generator from the system library to generate the random integers; a subprogram to calculate the greatest common divisor of two integers using Euclid's Algorithm; and a subprogram that calculates square roots. If these latter two programs are not available, you will have to write them as well. The main program should loop through a large number of random numbers to give an estimate of the aforementioned probability. From this, it is a simple matter to solve for your estimate of &pi;.
 
 ##### If the result is close to 3.14, congratulations! If not, then the result is probably low, usually a value of around 2.7. Why would such an inferior result be obtained?
-See attached program for answer.
+See attached program program.c and program.exe.
+Steps to compile: gcc -o program.exe program.c
+Steps to execute: ./program.exe
